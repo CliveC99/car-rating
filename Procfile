@@ -1,1 +1,1 @@
-web: gunicorn carreview:wsgi
+web: gunicorn carreview.wsgi
