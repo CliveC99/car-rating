@@ -29,6 +29,13 @@
         </nav>
     </header>
 
+    <h1>Post appears here</h1>
+    <ul>
+    {% for post in object_list %}
+        <li>{{ post.title }} - {{ post.author }}<br/> {{ post.content }}<br/> {{ post.created_on }}</li>
+    {% endfor %}
+    </ul>
+
 </body>
 
 </html>
