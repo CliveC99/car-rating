@@ -32,7 +32,7 @@
     <h1>Post appears here</h1>
     <ul>
     {% for post in object_list %}
-        <li>{{ post.title }} - {{ post.author }}<br/> {{ post.content }}<br/> {{ post.created_on }}</li>
+        <li><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> - {{ post.author }}<br/> {{ post.content }}<br/> {{ post.created_on }}</li>
     {% endfor %}
     </ul>
 

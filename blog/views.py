@@ -10,3 +10,8 @@ from .models import Post
 class view(ListView):
     model = Post
     template_name = 'index.html'
+
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = 'post_details.html'
