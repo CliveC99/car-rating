@@ -1,6 +1,12 @@
-<a href="{% url 'home' %}"><button>Home</button></a>
+{% extends 'base.html' %}
+
+{% block content %}
 
 <div>
     <p> Title: {{ post.title}} <hr> Created By: {{ post.author }} <hr> Content: <br> {{ post.content }}
 </p>
 </div>
+
+<a href="{% url 'home' %}" class="btn btn-dark">Back</a>
+
+{% endblock %}
