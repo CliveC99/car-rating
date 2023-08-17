@@ -10,5 +10,6 @@
 
 <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
 <a href="{% url 'edit_post' post.pk %}" class="btn btn-dark">Edit</a>
+<a href="{% url 'delete_post' post.pk %}" class="btn btn-dark">Delete</a>
 
 {% endblock %}
