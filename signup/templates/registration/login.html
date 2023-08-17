@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Car Review - Login {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Car Reviews</title>
+</head>
+
+<body>
+    {% block content %}
+    
+    <h1>Login</h1>
+    <div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-dark">Login</button>
+    </div>
+
+
+    {% endblock %}
+
+</body>
+
+</html>
