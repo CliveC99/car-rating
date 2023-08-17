@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-clivec99-carrating-cczlwbyn5f6.ws-eu103.gitpod.io', 'car-review-21ed92bc74a0.herokuapp.com']
+ALLOWED_HOSTS = ['8000-clivec99-carrating-cczlwbyn5f6.ws-eu104.gitpod.io', 'car-review-21ed92bc74a0.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-clivec99-carrating-cczlwbyn5f6.ws-eu103.gitpod.io']
 
