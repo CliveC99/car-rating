@@ -4,12 +4,15 @@
 {% block content %}
 
 <div>
-    <p> Title: {{ post.title}} <hr> Category: {{ post.category }} <hr> Created By: {{ post.author }} <hr> Content: <br> {{ post.content }}
+    
+    <p> Title: {{ post.title }} <hr> Category: {{ post.category }} <hr> Created By: {{ post.author }} <hr> Content: <br> {{ post.content }}
 </p>
 </div>
 
 <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
+{% if user.id == post.author.id %}
 <a href="{% url 'edit_post' post.pk %}" class="btn btn-dark">Edit</a>
 <a href="{% url 'delete_post' post.pk %}" class="btn btn-dark">Delete</a>
+{% endif %}
 
 {% endblock %}
