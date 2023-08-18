@@ -12,7 +12,7 @@
 
 <body>
     {% block content %}
-    
+    {% if user.is_authenticated %}
     <h1>Delete Post</h1>
     <br><br>
     <h4>Delete: {{ post.title }}</h4>
@@ -23,8 +23,11 @@
         <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
         <button class="btn btn-dark">Delete</button>
     </div>
+    {% else %}
+    <h1>You are not allowed to delete this post!</h1>
+    <a href="{% url 'home' %}" class="btn btn-dark">Home</a>
 
-
+    {% endif %}
     {% endblock %}
 
 </body>

@@ -13,6 +13,7 @@
 <body>
     {% block content %}
     
+    {% if user.is_authenticated %}
     <h1>Edit Post</h1>
     <div class="form-group">
     <form method="POST">
@@ -22,7 +23,12 @@
         <button class="btn btn-dark">Edit</button>
     </div>
 
+    {% else %}
+    <h1>You are not allowed to edit this post!</h1>
+    <a href="{% url 'home' %}" class="btn btn-dark">Home</a>
+    
 
+    {% endif %}
     {% endblock %}
 
 </body>
