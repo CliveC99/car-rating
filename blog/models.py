@@ -6,6 +6,16 @@ from django.urls import reverse
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('home')
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     title_tag = models.CharField(max_length=200)
@@ -13,6 +23,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
+    category = models.CharField(max_length=200, default='VAG')
 
     def __str__(self):
         return self.title
