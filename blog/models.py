@@ -24,6 +24,10 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     category = models.CharField(max_length=200, default='VAG')
+    likes = models.ManyToManyField(User, related_name='carreview')
+
+    def total_likes(self):
+        return self.likes.count()
 
     def __str__(self):
         return self.title
