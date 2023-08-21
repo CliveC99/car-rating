@@ -8,7 +8,7 @@
     <p> Title: {{ post.title }}
         <hr> Category: {{ post.category }}
         <hr> Created By: {{ post.author }}
-        <hr> Content: <br> {{ post.content }}
+        <hr> Content: <br> {{ post.content|safe }}
     </p>
 </div>
 
