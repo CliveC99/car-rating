@@ -8,7 +8,12 @@ from django.http import HttpResponseRedirect
 
 def Likes(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
-    post.likes.add(request.user)
+    liked = False
+    if post.likes.filter(id=request.user.id).exists():
+        post.likes.remove(request.user)
+        liked = False
+    else:
+        post.likes.add(request.user)
     return HttpResponseRedirect(reverse('post-details', args=[str(pk)]))
 
 
@@ -26,7 +31,12 @@ class PostDetail(DetailView):
         context = super(PostDetail, self).get_context_data(*args, **kwargs)
         likesnumber = get_object_or_404(Post, id=self.kwargs['pk'])
         total_likes = likesnumber.total_likes()
+
+        liked = False
+        if likesnumber.likes.filter(id=self.request.user.id).exists():
+            liked = True
         context["total_likes"] = total_likes
+        context["liked"] = liked
         return context
 
 

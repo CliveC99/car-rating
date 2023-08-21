@@ -21,9 +21,17 @@
 <hr>
 <form action="{% url 'likes' post.pk %}" method="POST">
     {% csrf_token %}
+    {% if user.is_authenticated %}
+    {% if liked %}
+    <button type="submit" name="post_id" value="{{ post.id }}" class=" btn btn-danger">Unfavourite</button> <br><br>
+    {% else %}
     <button type="submit" name="post_id" value="{{ post.id }}" class=" btn btn-dark">Favourite</button> <br><br>
+    {% endif %}
+    {% else %}
+    <a href="{% url 'login' %}">Login to favourite</a>
+    <br><br>
+    {% endif %}
     <strong>{{ total_likes }} Favourites</strong>
-
 </form>
 
 {% endblock %}
