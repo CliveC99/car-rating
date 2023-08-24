@@ -12,7 +12,7 @@ for item in categories:
 class CreatePostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'title_tag', 'author', 'category', 'content')
+        fields = ('title', 'title_tag', 'author', 'category', 'content', 'image')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),

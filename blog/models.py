@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from ckeditor.fields import RichTextField
 
+
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -18,6 +19,7 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    image = models.ImageField(null=True, blank=True, upload_to="media/")
     title_tag = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
     created_on = models.DateTimeField(auto_now_add=True)

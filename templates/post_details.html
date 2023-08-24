@@ -2,12 +2,13 @@
 {% block title %} Car Review - {{ post.title }} {% endblock %}
 
 {% block content %}
-
+{% load cloudinary %}
 <div>
 
     <p> Title: {{ post.title }}
         <hr> Category: {{ post.category }}
         <hr> Created By: {{ post.author }}
+        <hr> <img class="img-fluid" src="{{ post.image.url }}">
         <hr> Content: <br> {{ post.content|safe }}
     </p>
 </div>
