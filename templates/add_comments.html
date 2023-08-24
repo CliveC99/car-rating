@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Car Review - Add Comment {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Car Reviews</title>
+</head>
+
+<body>
+    {% block content %}
+    
+    <h1>Add Comment</h1>
+    <div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-dark">Add Comment</button>
+    </div>
+
+    <script>
+        var name = "{{ user.id }}";
+        document.getElementById("user").value = name;
+    </script>
+
+
+    {% endblock %}
+
+</body>
+
+</html>

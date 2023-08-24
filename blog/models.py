@@ -36,3 +36,10 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('home')
+
+
+class Comments(models.Model):
+    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    name = models.CharField(max_length=250)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
