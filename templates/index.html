@@ -13,10 +13,10 @@
 <body>
     {% block content %}
     
-    <h1>Post appears here</h1>
-    <ul>
+    <h1 class="text-center test">Posts appears here:</h1>
+    <ul class="text-center list-unstyled post-detail">
     {% for post in object_list %}
-        <li><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> <br>- {{ post.author }} <br>- {{ post.category }}<br/>{{ post.content|slice:":0 "}} {{ post.created_on }}<hr></li>
+        <li class="details"><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> <br>- {{ post.author }} <br>- {{ post.category }}<br/>{{ post.content|slice:":0 "}} {{ post.created_on }}<hr></li>
     {% endfor %}
     </ul>
 
