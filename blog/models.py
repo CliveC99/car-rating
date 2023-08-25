@@ -43,3 +43,7 @@ class Comments(models.Model):
     name = models.CharField(max_length=250)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+
+
+class Contact(models.Model):
+    content = models.TextField()
