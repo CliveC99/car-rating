@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post, Category, Comments
+from .models import Post, Category, Comments, Contact
 
 categories = Category.objects.all().values_list('name', 'name')
 
@@ -30,5 +30,16 @@ class AddComment(forms.ModelForm):
 
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'content': forms.Textarea(attrs={'class': 'form-control'}),
+        }
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Contact
+        fields = ('username', 'email', 'content')
+
+        widgets = {
+            'username': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }

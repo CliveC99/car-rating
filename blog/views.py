@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comments, Contact
-from .forms import CreatePostForm, AddComment
+from .forms import CreatePostForm, AddComment, ContactForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 
@@ -70,5 +70,5 @@ class DeletePost(DeleteView):
 
 class Contact(CreateView):
     model = Contact
+    form_class = ContactForm
     template_name = 'contact.html'
-    fields = '__all__'
