@@ -46,6 +46,6 @@ class Comments(models.Model):
 
 
 class Contact(models.Model):
-    content = models.TextField()
+    content = models.TextField(max_length=500)
     email = models.EmailField()
     username = models.CharField(max_length=250)

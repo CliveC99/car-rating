@@ -72,3 +72,4 @@ class Contact(CreateView):
     model = Contact
     form_class = ContactForm
     template_name = 'contact.html'
+    success_url = reverse_lazy('home')
