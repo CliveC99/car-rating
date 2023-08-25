@@ -29,7 +29,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'edit_profile' %}">Edit Profile</a>
-                </li>   
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
@@ -43,13 +43,13 @@
                 {% endif %}
             </ul>
             {% if user.is_authenticated %}
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
                         {{ user.username }}
-                        </a>
-                    </li>
-                </ul>
+                    </a>
+                </li>
+            </ul>
             {% endif %}
         </div>
     </nav>
@@ -59,7 +59,17 @@
 
         {% endblock %}
     </div>
-    
+
+    <div class="card">
+
+        <div class="card-body text-center bg-secondary">
+            <h5 class="card-title">Car Reviews - 2023 </h5>
+            <a href="https://www.facebook.com/" class="btn btn-dark" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/" class="btn btn-dark" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/" class="btn btn-dark" target="_blank">Instagram</a>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
