@@ -14,11 +14,11 @@
     {% block content %}
     {% if user.is_authenticated %}
     {% if user.id == post.author.id %}
-    <h1>Delete Post</h1>
+    <h1 class="text-center">Delete Post</h1>
     <br><br>
-    <h4>Delete: {{ post.title }}</h4>
+    <h4 class="text-center">Delete Post: <br> {{ post.title }}</h4>
     <div class="form-group">
-    <form method="POST">
+    <form method="POST" class="text-center">
         {% csrf_token %}
         
         <a href="{% url 'home' %}" class="btn btn-dark">Back</a>

@@ -3,11 +3,11 @@ from django.views import generic
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
-from .forms import RegistrationForm, EditProfile
+from .forms import RegistrationForm, EditProfile, PasswordUpdatingForm
 
 
 class PasswordsChangeView(PasswordChangeView):
-    form_class = PasswordChangeForm
+    form_class = PasswordUpdatingForm
     success_url = reverse_lazy('home')
 
 
