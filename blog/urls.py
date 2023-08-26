@@ -15,4 +15,3 @@ urlpatterns = [
     path('contact/', Contact.as_view(), name='contact'),
     path('<int:uid>/password/', PasswordsChangeView.as_view(template_name='registration/change_password.html'))
 ]
-
