@@ -44,8 +44,14 @@ class Comments(models.Model):
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return '%s ---- %s' % (self.post.title, self.name)
+
 
 class Contact(models.Model):
     content = models.TextField(max_length=500)
     email = models.EmailField()
     username = models.CharField(max_length=250)
+
+    def __str__(self):
+        return '%s ---- %s' %  (self.username, self.email)
