@@ -13,5 +13,6 @@ urlpatterns = [
     path('like/<int:pk>', Likes, name='likes'),
     path('car/<int:pk>/comment/', AddComment.as_view(), name='add_comment'),
     path('contact/', Contact.as_view(), name='contact'),
-    path('<int:uid>/password/', PasswordsChangeView.as_view(template_name='registration/change_password.html'))
+    path('<int:uid>/password/', PasswordsChangeView.as_view(template_name='registration/change_password.html')),
+    path('form_success', views.FormSuccess, name='form_success'),
 ]

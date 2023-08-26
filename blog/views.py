@@ -4,6 +4,7 @@ from .models import Post, Comments, Contact
 from .forms import CreatePostForm, AddComment, ContactForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
+from . import views
 
 def Likes(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
@@ -71,4 +72,7 @@ class Contact(CreateView):
     model = Contact
     form_class = ContactForm
     template_name = 'contact.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('form_success')
+
+def FormSuccess(request):
+    return render(request, 'form_success.html', {})
