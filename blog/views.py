@@ -5,7 +5,6 @@ from .forms import CreatePostForm, AddComment, ContactForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 
-
 def Likes(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     liked = False
