@@ -12,13 +12,14 @@
 
 <body>
     {% block content %}
-    
+
     <h1>Contact</h1>
     <div class="form-group">
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-dark">Submit</button>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-dark">Submit</button>
+        </form>
     </div>
 
 

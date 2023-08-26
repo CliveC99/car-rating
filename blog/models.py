@@ -25,7 +25,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     content = RichTextField(blank=True, null=True)
-    category = models.CharField(max_length=200, default='VAG')
+    category = models.TextField(default='VAG')
     likes = models.ManyToManyField(User, related_name='carreview')
 
     def total_likes(self):

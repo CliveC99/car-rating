@@ -17,18 +17,18 @@
     <div class="form-group">
         <form method="POST">
             {% csrf_token %}
-            <form>
                 <div class="form-group">
                     <p class="text-danger font-weight-bold"><u>Usernames are case sensitive</u></p>
                     <label for="username">Username:</label>
-                    <input type="text" class="form-control" name="username" placeholder="Enter Username">
+                    <input id="username" type="text" class="form-control" name="username" placeholder="Enter Username">
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <button class="btn btn-dark">Login</button>
                 <p>Not a user? <a href="{% url 'register' %}">Register</a></p>
+            </form>
     </div>
 
 
