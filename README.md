@@ -22,7 +22,6 @@ Check out [Car Reviews]()
   - <p><a href="#cloning">Cloning</a></p>
   - <p><a href="#forking">Forking</a></p>
   - <p><a href="#git-commits">Git Commits</a></p>
-  - <p><a href="#tools-used">Tools Used</a></p>
   - <p><a href="#credits">Credits</a></p>
 
 # Wireframes
@@ -262,31 +261,16 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
    4. git push.
   ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693167118/PP4%20Readme/commits_eaetxp.jpg)
 
-  # Tools Used
-  # **Tools Used**
-  - I used [Drawio](https://app.diagrams.net/?src=about) for creating the flowchart.
-  - I used [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB) for the pictures inside the README.
-  - I used [Github](https://github.com/) for storing my code.
-  - I used [Gitpod](https://gitpod.io/workspaces) for coding.
-  - I used [Heroku](https://dashboard.heroku.com/apps) for hosting my game.
-
-
-  
 # Credits
 
-  - I got help with the user input from [Stack Overflow.](https://stackoverflow.com/questions/49496609/user-input-being-incorrectly-appended-to-python-list)
-  - I got help with the score counter from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)
   - I got help and inspiration from [Youtube](https://www.youtube.com/)
-    - [Tutorial 1](https://www.youtube.com/watch?v=dK6gJw4-NCo&t=276s&ab_channel=CodeCoach)
-    - [Tutorial 2](https://www.youtube.com/watch?v=BHh654_7Cmw&t=2977s&ab_channel=CleverProgrammer)
-    - [Tutorial 3](https://www.youtube.com/watch?v=kz7kF8CMAso&ab_channel=Code%27sPathshala)
-    - [Tutorial 4](https://www.youtube.com/watch?v=M3G1ZgOMFxo&t=159s&ab_channel=ShaunHalverson)
-    - [Tutorial 5](https://www.youtube.com/watch?v=8eHpXLDhi6w&ab_channel=JuniLearning)
-  - I got help with `os.system('clear')` from [Scaler Topics](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
-  - I got help with `time.sleep(3)` from [Digital Ocean](https://www.digitalocean.com/community/tutorials/python-time-sleep)
+    - [Tutorial 1](https://www.youtube.com/watch?v=OBsLgCm-Ayo&list=PL_KegS2ON4s580mS3nPt5x_eu6kO2cvOc&ab_channel=Desphixs)
+    - [Tutorial 2](https://www.youtube.com/watch?v=oU9kN13-Xbs&t=1178s&ab_channel=BekBrace)
+    - [Tutorial 3](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&ab_channel=Codemy.com)
+    - [Tutorial 4](https://www.youtube.com/watch?v=I8TRkEcw9Mg&ab_channel=CodeWithStein)
+    - [Tutorial 5](https://www.youtube.com/watch?v=3aVqWaLjqS4&ab_channel=CoreySchafer)
   - This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn).
   - I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
-
 
 
  <p><a href="#table-of-contents">Back to table of contents.</a></p>
