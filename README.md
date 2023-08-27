@@ -15,7 +15,7 @@ Check out [Car Reviews]()
   - <p><a href="#ux">UX</a></p>
   - <p><a href="#features">Features</a></p>
   - <p><a href="#manual-testing">Manual Testing</a></p>
-  - <p><a href="#imported-modules">Imported Modules</a></p>
+  - <p><a href="#frameworks"> Framework / Programs Used / Technologies</a></p>
   - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
   - <p><a href="#deployment">Deployment</a></p>
   - <p><a href="#cloning">Cloning</a></p>
@@ -105,11 +105,35 @@ Check out [Car Reviews]()
    | CSS Validation  | Pass | Pass | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693162287/PP4%20Readme/css_rhhson.jpg) |
    | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
 
-   # Imported Modules
-  - [OS](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
-    - I used `os.system('clear')` to clear the terminal so it wouldn't be clogged up.
-  - [Time](https://www.digitalocean.com/community/tutorials/python-time-sleep)
-    - I used `time.sleep(3)` so it would give the user time to read the information.
+   # Frameworks
+  - [Django](https://www.djangoproject.com/)
+    - Django was used as the framework and logic of the project.
+  - [Bootstrap](https://getbootstrap.com/)
+    - Bootstrap was used for the styling of the site.
+  - [Git](https://git-scm.com/)
+    - Git was used for version control
+  - [Github](https://github.com/)
+    - Github was used for storing the code.
+  - [Heroku](https://id.heroku.com/)
+    - Heroku was used for live deployment.
+  - [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used for wireframes.
+  - [Google Slides](https://www.google.com/slides/about/)
+    - Google Slides was used for storing large images.
+  - [Gunicorn](https://gunicorn.org/)
+    - Gunicorn was used for the server for heroku
+  - [Cloudinary](https://cloudinary.com/)
+    - Cloudinary was used for image storage.
+  - [Pillow](https://pypi.org/project/Pillow/)
+    - Pillow was used for an image libary
+  - [HTML](https://en.wikipedia.org/wiki/HTML/)
+    - HTML was used for the templates.
+  - [JavaScript](https://www.javascript.com/)
+    - Javascript was used to get users info.
+  - [Python](https://www.python.org/)
+    - Python was used for functionality of the site.
+  - [CSS](https://en.wikipedia.org/wiki/CSS)
+    - CSS was used for extra styling.
 
     # Bugs and Fixes
   | Bugs/Errors        |   Explain   | Fix |
