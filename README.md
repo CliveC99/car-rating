@@ -17,6 +17,7 @@ Check out [Car Reviews]()
   - <p><a href="#manual-testing">Manual Testing</a></p>
   - <p><a href="#frameworks"> Framework / Programs Used / Technologies</a></p>
   - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
+  - <p><a href="#creation">Creation</a></p>
   - <p><a href="#deployment">Deployment</a></p>
   - <p><a href="#cloning">Cloning</a></p>
   - <p><a href="#forking">Forking</a></p>
@@ -114,6 +115,8 @@ Check out [Car Reviews]()
     - Git was used for version control
   - [Github](https://github.com/)
     - Github was used for storing the code.
+  - [Gitpod](https://gitpod.io/workspaces)
+    - Gitpod was used for coding.
   - [Heroku](https://id.heroku.com/)
     - Heroku was used for live deployment.
   - [Balsamiq](https://balsamiq.com/)
@@ -144,37 +147,106 @@ Check out [Car Reviews]()
    | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
    | User input for play again/reset score | I was having issues that allowed the user to continue to the next step if the data was wrong. | I solved this by adding `valid = False` and then placing `input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")` |
 
+   # Creation
+   1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+   2. Press 'Use this template'
+   3. Create a new repository.
+   4. Select a name.
+   5. Click create.
+   6. Click gitpod.
+   7. In the terminal install Django and Gunicorn
+      -  pip3 install django gunicorn
+   8. Install the required libaries
+      - pip3 install dj_database_url==0.5.0 psycopg2
+   9. Install Cloudinary libaries
+      - pip3 install dj3-cloudinary-storage
+pip3 install urllib3==1.26.15
+  10. Create requirements file
+      - pip3 freeze --local > requirements.txt
+  11. Create Project
+      - django-admin startproject your_project_name .
+  12. Create App
+      - python3 manage.py startapp your_app
+  13. In settings.py add your app name inside 'Installed apps' and save the file
+  14.  Migrate your changes 
+       - python3 manage.py migrate
+  15. To run the server use 'python3 manage.py runserver'
+  16. Inside of settings.py in the 'Allowed hosts' field add your server address
+
+  ### DataBase
+  1. Head over to [Elephantsql](https://www.elephantsql.com/)
+  2. Create an account
+  3. Click create new instance
+  4. Set up your free plan
+  5. Select your region
+  6. Press review
+  7. Copy your databse url
+
+  ### Heroku
+  1. Head over to [Heroku](https://dashboard.heroku.com/)
+  2. Create an app (your_app_name) and location.
+  3. Head to settings and click reveal config vars.
+  4. Create a new one called 'DATABASE_URL' (Copy in your database url)
+  5. In gitpod create a file called 'env.py'
+  6. Import 'os'
+  7. Paste `os.environ["DATABASE_URL"]` (Replace 'DATABASE_URL) with your URL
+  8. Add a secret key `os.environ["SECRET_KEY"] = "create_your_own"`
+  9. Head back to heroku config vars and add 'SECRET_KEY' and input your key.
+  10. In settings.py add 
+      - `import os`
+      `import dj_database_url`
+      `if os.path.isfile("env.py):`
+      `import env`
+  11. Remove the secret key and replace it with `SECRET_KEY = os.environ.get('SECRET_KEY')` (This links with env.py)
+  12. Comment out the database content
+  13. Paste in: `DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}`
+14. Save all files and in the terminal paste `python3 manage.py migrate`
+### Static Files
+ 1. Head to [Cloudinary](Cloudinary.com)
+ 2. Head to dashboard and copy your CLOUDINARY_URL
+ 3. In env.py add `os.environ["CLOUDINARY_URL"] = "cloudinary://your_link`
+ 4. Add cloudinary url to heroku confic vars.
+ 5. Add a confic var `DISABLE_COLLECTSTATIC, 1` 
+ 6. In settings.py add Cloudinary to 'Installed apps'`  'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',`
+  7. Under STATIC_URL add: `STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
+  8. Change the template directory to `'DIRS': [TEMPLATES_DIR],`
+  9. In allowed hosts add heroku ["your_project_name.herokuapp.com", "YOUR_HOSTNAME"]
+  10. In gitpod create 3 folder 'media, static and templates'
+  11. Create a 'Procfile'
+  12. Inside the Procfile add `web: gunicorn your_project_name.wsgi`
+  13. In the terminal add, commit and push.
+
 
    # Deployment
 
 1. Open up [Heroku.](https://dashboard.heroku.com/apps)
-2. Click "New" at the top right.
-3. Click "Create new app".
-4. Choose an "App name" and pick your region.
-5. Click "Create app".
-6. Click "Settings".
-7. Locate config vars and click "Reveal Config Vars".
-8. Set the key to "PORT".
-9. Set the value to "8000".
-10. Click "Add buildpack".
-11. Add "python" and "nodejs".
-12. Click "Deploy" and connect Github.
-13. Search for your "repo-name".
-14. Click "Automatic Deploys"
+2. Click Deploy
+3. Set deployment method as GitHub
+4. Click Manual Deploy
+5. Watch the build log
+6. When complete it will say 'Your App Was Successfully Deployed'
 
 # Cloning
-1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
 2. Above the list of files click "Code".
 3. Click if you would like to clone as "HTTPS", "SSH", or "GitHub CLI".
 4. Once selected press copy.
 5. Open Git Bash.
 6. Change the directory to where you want the clone to appear.
 7. Paste in the link you copied in step 4. (This is the line for my repository): <br>
-  `$ git clone https://github.com/CliveC99/project-3-tic-tac-toe`
+  `$ git clone https://github.com/CliveC99/car-rating.git`
 8. Press enter and the clone will happen.
 
 # Forking
-1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+1. Open up the repository [Car Reviews](https://github.com/CliveC99/car-rating)
 2. Locate the fork button at the top right.
 3. Select an owner and repository name.
 4. Add a description (optional).
@@ -188,7 +260,7 @@ Check out [Car Reviews]()
    2. git add (file name)
    3. git commit -m (message)
    4. git push.
-  ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681686359/p3-tic-tac-toe/git-commits1_esa2s2.jpg)
+  ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693167118/PP4%20Readme/commits_eaetxp.jpg)
 
   # Tools Used
   # **Tools Used**
