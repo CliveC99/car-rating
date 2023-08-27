@@ -1,108 +1,182 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Car Review Blog Site
+Here you can post your car and get reviews.
 
-Welcome CliveC99,
+The game is hosted on heroku.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The aim of the blog site is to get a review,ideas etc on your car.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Check out [Car Reviews]()
 
-## Gitpod Reminders
+### **Disclaimer if you would like to open any links in a new tab use `Ctrl` and click the link.**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Table of Contents
+  
+  - <p><a href="#wireframes">Wireframes</a></p>
+  - <p><a href="#ux">UX</a></p>
+  - <p><a href="#features">Features</a></p>
+  - <p><a href="#manual-testing">Manual Testing</a></p>
+  - <p><a href="#imported-modules">Imported Modules</a></p>
+  - <p><a href="#bugs-and-fixes">Bugs and Fixes</a></p>
+  - <p><a href="#deployment">Deployment</a></p>
+  - <p><a href="#cloning">Cloning</a></p>
+  - <p><a href="#forking">Forking</a></p>
+  - <p><a href="#git-commits">Git Commits</a></p>
+  - <p><a href="#tools-used">Tools Used</a></p>
+  - <p><a href="#credits">Credits</a></p>
 
-`python3 -m http.server`
+# Wireframes
+![Wireframes]()
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# How to play
+- The game is played on a 3x3 board.
+- Player 1 is given 'X' and Player 2 is given 'O'
+- The aim of the game is to get 3 'X's or 3 'O's in a row, column or diagonally.
+- If the board is filled without the above terms. The game is a draw
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  # UX
+### **User Goals** 
+- As a user, I want to be able to play against my friends.
+- As a user, I want the information to be understandable.
+- As a user, I want my score to be counted to see who wins overall.
+- As a user, I want the game to run smoothly.
+- As a user, I want to be able to play again.
 
-A blue button should appear to click: _Make Public_,
+### **Owner Goals**
+- As the owner, I want to be able to add new features.
 
-Another blue button should appear to click: _Open Browser_.
+### **Returning User**
+- As a returning user, I want to try and beat my previous scores against friends.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Features
+## **Exisiting Features**
+* Welcome message
+* Gameboard
+* Python sleep()
+* Players turns
+* Winner/Draw
+* Scoreboard
+* Play again
+* Reset score
+| Feature        |      |
+   | -------------  |:-------------:| 
+   | Welcome message | ![Welcome Message](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675512/p3-tic-tac-toe/welcome-message_ybkagc.jpg) |
+   | User input validation | ![User input validation](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675621/p3-tic-tac-toe/input-validation_nnnx4m.jpg) |
+   | Gameboard | ![Gameboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675701/p3-tic-tac-toe/gameboard_sbrv1d.jpg) |
+   | Python sleep() example | ![Python sleep()](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676075/p3-tic-tac-toe/sleep-module_tz7g7l.jpg) |
+   | Example of players turn | ![Players turn](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676217/p3-tic-tac-toe/players-turn_g8ykty.jpg) |
+   | Example of winner/draw | ![Winner/draw](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676657/p3-tic-tac-toe/winner_gr8gvf.jpg) |
+   | Scoreboard | ![Scoreboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677425/p3-tic-tac-toe/scoreboard_wv8sk4.jpg) |
+   | Play again | ![Play again](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677497/p3-tic-tac-toe/play-again_zrmdwi.jpg) |
+   | Reset scoreboard | ![Reset scoreboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677564/p3-tic-tac-toe/reset-score_h2btkj.jpg) |
+## Features to be added
+* Option to play against the computor.
+* Username control.
+* Leaderboard.
 
-To log into the Heroku toolbelt CLI:
+# Manual Testing
+   | Feature        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | User input verifaction | Show error message and let the user input the right data. | If the user input the wrong data, an error shows. If the user inputs the correct data, it moves to the next step. | Input correct data and input incorrect data. |
+   | Python sleep   | Pause the next step from showing up.    | There was a pause of the next step showing where required. | Input data to move to the next step. |
+   | Players turns   | Switch from 'X' to 'O'.   | Switched correctly | Input data on the board. |
+   | Win or Draw | Show who won or the game was a draw.  | Printed the winner or if the game was a draw. | Played the game to see if it would give the right output. |
+   | Play again | Start the game again.   | The game started. | Restart the game. |
+   | Reset score   | Score either is reset or continues | When selected the score reset, when not selected the score kept counting. | Reset the score, play without resetting the score. |
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   | Testing        |    Expected   | Result       | Test |
+   | -------------  |:-------------:| -----:| -----: |
+   | Pep8 Linter | Pass. | No Errors. | ![test](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681679398/p3-tic-tac-toe/pep8_leax3w.jpg) |
+   | Local Terminal | Game to function without issues. | Game functioned. | Play the game. |
+   | CI Heroku Terminal | Game to function without issues. | Game functions. | Play the game. |
 
-------
+   # Imported Modules
+  - [OS](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
+    - I used `os.system('clear')` to clear the terminal so it wouldn't be clogged up.
+  - [Time](https://www.digitalocean.com/community/tutorials/python-time-sleep)
+    - I used `time.sleep(3)` so it would give the user time to read the information.
 
-## Release History
+    # Bugs and Fixes
+  | Bugs/Errors        |   Explain   | Fix |
+   | -------------  |:-------------:| -----: |
+   | User input  | I was having issues with user input if the wrong data was entered. | I got help from [Stack Overflow.](https://stackoverflow.com/questions/49496609/user-input-being-incorrectly-appended-to-python-list) |
+   | Index errors | I was having issues with index errors being one off. | I fixed this by adding `int(position) - 1` where needed. |
+   | Score counter | I was having issues with the score counter adding for a win. |  I solved this by adding `player_one += 1` I got help from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)|
+   | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
+   | User input for play again/reset score | I was having issues that allowed the user to continue to the next step if the data was wrong. | I solved this by adding `valid = False` and then placing `input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")` |
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+   # Deployment
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1. Open up [Heroku.](https://dashboard.heroku.com/apps)
+2. Click "New" at the top right.
+3. Click "Create new app".
+4. Choose an "App name" and pick your region.
+5. Click "Create app".
+6. Click "Settings".
+7. Locate config vars and click "Reveal Config Vars".
+8. Set the key to "PORT".
+9. Set the value to "8000".
+10. Click "Add buildpack".
+11. Add "python" and "nodejs".
+12. Click "Deploy" and connect Github.
+13. Search for your "repo-name".
+14. Click "Automatic Deploys"
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Cloning
+1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+2. Above the list of files click "Code".
+3. Click if you would like to clone as "HTTPS", "SSH", or "GitHub CLI".
+4. Once selected press copy.
+5. Open Git Bash.
+6. Change the directory to where you want the clone to appear.
+7. Paste in the link you copied in step 4. (This is the line for my repository): <br>
+  `$ git clone https://github.com/CliveC99/project-3-tic-tac-toe`
+8. Press enter and the clone will happen.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Forking
+1. Open up the repository [project-3-tic-tac-toe.](https://github.com/CliveC99/project-3-tic-tac-toe)
+2. Locate the fork button at the top right.
+3. Select an owner and repository name.
+4. Add a description (optional).
+5. Click "Create fork".
+6. The repository should appear in your repositories now.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# **Git Commits**
+   - I structured my git commits whenever I would add, change or update code.
+   - I did this by using:
+   1. git status
+   2. git add (file name)
+   3. git commit -m (message)
+   4. git push.
+  ![Git Commits](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681686359/p3-tic-tac-toe/git-commits1_esa2s2.jpg)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  # Tools Used
+  # **Tools Used**
+  - I used [Drawio](https://app.diagrams.net/?src=about) for creating the flowchart.
+  - I used [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB) for the pictures inside the README.
+  - I used [Github](https://github.com/) for storing my code.
+  - I used [Gitpod](https://gitpod.io/workspaces) for coding.
+  - I used [Heroku](https://dashboard.heroku.com/apps) for hosting my game.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  
+# Credits
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - I got help with the user input from [Stack Overflow.](https://stackoverflow.com/questions/49496609/user-input-being-incorrectly-appended-to-python-list)
+  - I got help with the score counter from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)
+  - I got help and inspiration from [Youtube](https://www.youtube.com/)
+    - [Tutorial 1](https://www.youtube.com/watch?v=dK6gJw4-NCo&t=276s&ab_channel=CodeCoach)
+    - [Tutorial 2](https://www.youtube.com/watch?v=BHh654_7Cmw&t=2977s&ab_channel=CleverProgrammer)
+    - [Tutorial 3](https://www.youtube.com/watch?v=kz7kF8CMAso&ab_channel=Code%27sPathshala)
+    - [Tutorial 4](https://www.youtube.com/watch?v=M3G1ZgOMFxo&t=159s&ab_channel=ShaunHalverson)
+    - [Tutorial 5](https://www.youtube.com/watch?v=8eHpXLDhi6w&ab_channel=JuniLearning)
+  - I got help with `os.system('clear')` from [Scaler Topics](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
+  - I got help with `time.sleep(3)` from [Digital Ocean](https://www.digitalocean.com/community/tutorials/python-time-sleep)
+  - This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn).
+  - I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+ <p><a href="#table-of-contents">Back to table of contents.</a></p>
