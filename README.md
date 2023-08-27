@@ -79,27 +79,31 @@ Check out [Car Reviews]()
    | Favourite | ![Favourite](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159817/PP4%20Readme/Screenshot_2023-08-27_190950_ezzzdc.jpg) |
    | Comment on Post | ![Comment on Post](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159890/PP4%20Readme/Screenshot_2023-08-27_191123_qxfe19.jpg) |
    | Edit Profile | ![Edit Profile](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159967/PP4%20Readme/Screenshot_2023-08-27_191232_qnvzfx.jpg) |
-| Change Password | ![Change Password](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160084/PP4%20Readme/Screenshot_2023-08-27_191435_jtctri.jpg) |
-| Contact | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160133/PP4%20Readme/Screenshot_2023-08-27_191521_s4pker.jpg) |
+   | Change Password | ![Change Password](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160084/PP4%20Readme/Screenshot_2023-08-27_191435_jtctri.jpg) |
+   | Contact | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160133/PP4%20Readme/Screenshot_2023-08-27_191521_s4pker.jpg) |
 ## Features to be added
 * Send an email through the contact form.
 
 # Manual Testing
    | Feature        |    Expected   | Result       | Test |
    | -------------  |:-------------:| -----:| -----: |
-   | User input verifaction | Show error message and let the user input the right data. | If the user input the wrong data, an error shows. If the user inputs the correct data, it moves to the next step. | Input correct data and input incorrect data. |
-   | Python sleep   | Pause the next step from showing up.    | There was a pause of the next step showing where required. | Input data to move to the next step. |
-   | Players turns   | Switch from 'X' to 'O'.   | Switched correctly | Input data on the board. |
-   | Win or Draw | Show who won or the game was a draw.  | Printed the winner or if the game was a draw. | Played the game to see if it would give the right output. |
-   | Play again | Start the game again.   | The game started. | Restart the game. |
-   | Reset score   | Score either is reset or continues | When selected the score reset, when not selected the score kept counting. | Reset the score, play without resetting the score. |
-
+   | Login | Logs the user in | The user is logged in correctly. | Try logging in with username and password |
+   | Register   | Registers the user to the site    | The user is registered to the site correctly. | Fill in the required fields. |
+   | View Post   | The post details shows   | Post details are shown | Click a created post |
+   | Create Post | Post is created for the site  | Post is created on the site | Filled in the required fields for a post |
+   | Edit Post | Change information on the post   | The information changed. | Change information on the created post |
+   | Delete Post   | Post deletes from the site | Post deleted from the site | Use the delete function on the post |
+   | Favourite Post  |The post gains a favourite| Post gained a favourite| Click the favourite button |
+   | Comment on Post  | Comment appears under the post | Comment appeared under the post | Used the comment form |
+   | Edit Profile  |User info updates | User info updated | Used the edit profile form |
+   | Change Password  | Users password gets change | Password changed | Use the password change form |
+   | Contact  | Contact form is saved | Form saved | Used the contact form |
 
    | Testing        |    Expected   | Result       | Test |
    | -------------  |:-------------:| -----:| -----: |
-   | Pep8 Linter | Pass. | No Errors. | ![test](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681679398/p3-tic-tac-toe/pep8_leax3w.jpg) |
-   | Local Terminal | Game to function without issues. | Game functioned. | Play the game. |
-   | CI Heroku Terminal | Game to function without issues. | Game functions. | Play the game. |
+   | HTML Validation (W3C) | Pass | Errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vRhU0RHyYE-rQnc9Cna2TQW-rw12e_NPvrMDmPYpEMdQJLLMqwbAtvmh44Aj96I4yb24vrJ8p4Nvxx_/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
+   | CSS Validation  | Pass | Pass | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693162287/PP4%20Readme/css_rhhson.jpg) |
+   | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
 
    # Imported Modules
   - [OS](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
