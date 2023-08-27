@@ -16,7 +16,7 @@
     <h1 class="text-center test">Posts appears here:</h1>
     <ul class="text-center list-unstyled post-detail">
     {% for post in object_list %}
-        <li class="details">Title:<br><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> <br>Author:<br> {{ post.author }} <br>Category:<br> {{ post.category }}<br/>{{ post.content|slice:":0 "}} {{ post.created_on }}<hr></li>
+        <li class="details">Title:<br><a href="{% url 'post-details' post.pk %}">{{ post.title }}</a> <br>Author:<br> {{ post.author }} <br>Category:<br> {{ post.category }}<br>{{ post.content|slice:":0 "}} {{ post.created_on }}<hr></li>
     {% endfor %}
     </ul>
 
