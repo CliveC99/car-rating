@@ -57,29 +57,32 @@ Check out [Car Reviews]()
 
 # Features
 ## **Exisiting Features**
-* Welcome message
-* Gameboard
-* Python sleep()
-* Players turns
-* Winner/Draw
-* Scoreboard
-* Play again
-* Reset score
+* Login
+* Regisiter
+* View Posts
+* Create Post
+* Edit Post 
+* Delete Post
+* Favourite Post
+* Comment on Post
+* Edit Profile
+* Change Password
+* Contact
 | Feature        |      |
    | -------------  |:-------------:| 
-   | Welcome message | ![Welcome Message](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675512/p3-tic-tac-toe/welcome-message_ybkagc.jpg) |
-   | User input validation | ![User input validation](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675621/p3-tic-tac-toe/input-validation_nnnx4m.jpg) |
-   | Gameboard | ![Gameboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681675701/p3-tic-tac-toe/gameboard_sbrv1d.jpg) |
-   | Python sleep() example | ![Python sleep()](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676075/p3-tic-tac-toe/sleep-module_tz7g7l.jpg) |
-   | Example of players turn | ![Players turn](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676217/p3-tic-tac-toe/players-turn_g8ykty.jpg) |
-   | Example of winner/draw | ![Winner/draw](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681676657/p3-tic-tac-toe/winner_gr8gvf.jpg) |
-   | Scoreboard | ![Scoreboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677425/p3-tic-tac-toe/scoreboard_wv8sk4.jpg) |
-   | Play again | ![Play again](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677497/p3-tic-tac-toe/play-again_zrmdwi.jpg) |
-   | Reset scoreboard | ![Reset scoreboard](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1681677564/p3-tic-tac-toe/reset-score_h2btkj.jpg) |
+   | Login | ![Login](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693158863/PP4%20Readme/Screenshot_2023-08-27_185410_ncp5rh.jpg) |
+   | Registration | ![Registration](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693158938/PP4%20Readme/Screenshot_2023-08-27_185529_s7ku3n.jpg) |
+   | View Posts | ![View Posts](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159012/PP4%20Readme/Screenshot_2023-08-27_185643_ccmiym.jpg) |
+   | Create Post | ![Create Post](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159591/PP4%20Readme/Screenshot_2023-08-27_190614_inf8f1.jpg) |
+   | Edit Post | ![Edit Post](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159667/PP4%20Readme/Screenshot_2023-08-27_190736_smedce.jpg) |
+   | Delete Post | ![Delete Post](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159727/PP4%20Readme/Screenshot_2023-08-27_190836_n2yzzq.jpg) |
+   | Favourite | ![Favourite](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159817/PP4%20Readme/Screenshot_2023-08-27_190950_ezzzdc.jpg) |
+   | Comment on Post | ![Comment on Post](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159890/PP4%20Readme/Screenshot_2023-08-27_191123_qxfe19.jpg) |
+   | Edit Profile | ![Edit Profile](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693159967/PP4%20Readme/Screenshot_2023-08-27_191232_qnvzfx.jpg) |
+| Change Password | ![Change Password](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160084/PP4%20Readme/Screenshot_2023-08-27_191435_jtctri.jpg) |
+| Contact | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693160133/PP4%20Readme/Screenshot_2023-08-27_191521_s4pker.jpg) |
 ## Features to be added
-* Option to play against the computor.
-* Username control.
-* Leaderboard.
+* Send an email through the contact form.
 
 # Manual Testing
    | Feature        |    Expected   | Result       | Test |
