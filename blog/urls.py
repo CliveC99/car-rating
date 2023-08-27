@@ -4,6 +4,7 @@ from .views import view, PostDetail, CreatePost, EditPost, DeletePost, Likes, Ad
 from signup.views import PasswordsChangeView
 from django.contrib.auth import views as auth_views
 
+# Urls to direct to each required path
 urlpatterns = [
     path('', view.as_view(), name='home'),
     path('car/<int:pk>', PostDetail.as_view(), name='post-details'),

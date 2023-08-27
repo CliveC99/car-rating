@@ -6,6 +6,9 @@ from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 from . import views
 
+# Likes View
+
+
 def Likes(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     liked = False
@@ -16,11 +19,17 @@ def Likes(request, pk):
         post.likes.add(request.user)
     return HttpResponseRedirect(reverse('post-details', args=[str(pk)]))
 
+# Puts the posts on the index.html page
+# Puts the newest post first
+
 
 class view(ListView):
     model = Post
     template_name = 'index.html'
     ordering = ['-created_on']
+
+# Posts the post on the post_details.html page
+# Checks if the post is liked and shows the likes count
 
 
 class PostDetail(DetailView):
@@ -39,11 +48,17 @@ class PostDetail(DetailView):
         context["liked"] = liked
         return context
 
+# Shows the form for create_post.html
+
 
 class CreatePost(CreateView):
     model = Post
     form_class = CreatePostForm
     template_name = 'create_post.html'
+
+# Shows the form for add_comment.html
+# Posts the comment to the post
+# When complete return to the home page
 
 
 class AddComment(CreateView):
@@ -57,22 +72,36 @@ class AddComment(CreateView):
 
     success_url = reverse_lazy('home')
 
+# Shows the form for edit_post.html
+
 
 class EditPost(UpdateView):
     model = Post
     form_class = CreatePostForm
     template_name = 'edit_post.html'
 
+# Shows the delete_post.html page
+# When complete return home
+
+
 class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
+# Shows the form for contact.html
+# Shows the contact.html page
+# When complete direct to form_success.html
+
 
 class Contact(CreateView):
     model = Contact
     form_class = ContactForm
     template_name = 'contact.html'
     success_url = reverse_lazy('form_success')
+
+# When form is successful return to form_success.html
+
 
 def FormSuccess(request):
     return render(request, 'form_success.html', {})

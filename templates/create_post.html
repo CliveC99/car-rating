@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Required Links -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <title>Car Reviews</title>
 </head>
 
+<!-- Create Post Content/Form -->
 <body>
     {% block content %}
 
@@ -23,6 +25,7 @@
         </form>
     </div>
 
+    <!-- Get User Info -->
     <script>
         var name = "{{ user.id }}";
         document.getElementById("user").value = name;

@@ -3,6 +3,7 @@
 
 {% block content %}
 {% load cloudinary %}
+<!-- Post Content -->
 <div>
 
     Title: {{ post.title }}
@@ -12,12 +13,14 @@
     <hr> Content: <br> {{ post.content|safe }}
 
 </div>
+<!-- Buttons for CRUD -->
 <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
 {% if user.id == post.author.id %}
 <a href="{% url 'edit_post' post.pk %}" class="btn btn-dark">Edit</a>
 <a href="{% url 'delete_post' post.pk %}" class="btn btn-dark">Delete</a>
 {% endif %}
 
+<!-- Favourites Feature -->
 <hr>
 <form action="{% url 'likes' post.pk %}" method="POST">
     {% csrf_token %}
@@ -34,6 +37,7 @@
     <strong>{{ total_likes }} Favourites</strong>
 </form>
 
+<!-- Comments Feature -->
 <hr>
 Comments:
 {% if user.is_authenticated %}

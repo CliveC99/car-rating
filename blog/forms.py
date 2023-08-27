@@ -8,6 +8,8 @@ categories_list = []
 for item in categories:
     categories_list.append(item)
 
+# Form for create_post.html
+
 
 class CreatePostForm(forms.ModelForm):
     class Meta:
@@ -22,6 +24,8 @@ class CreatePostForm(forms.ModelForm):
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }
 
+# Form for add_comment.html
+
 
 class AddComment(forms.ModelForm):
     class Meta:
@@ -32,6 +36,9 @@ class AddComment(forms.ModelForm):
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }
+
+# Form for contact.html
+
 
 class ContactForm(forms.ModelForm):
     class Meta:
