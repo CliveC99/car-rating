@@ -25,28 +25,35 @@ Check out [Car Reviews]()
   - <p><a href="#credits">Credits</a></p>
 
 # Wireframes
-![Wireframes]()
 
-
-# How to play
-- The game is played on a 3x3 board.
-- Player 1 is given 'X' and Player 2 is given 'O'
-- The aim of the game is to get 3 'X's or 3 'O's in a row, column or diagonally.
-- If the board is filled without the above terms. The game is a draw
+-[Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vRhU0RHyYE-rQnc9Cna2TQW-rw12e_NPvrMDmPYpEMdQJLLMqwbAtvmh44Aj96I4yb24vrJ8p4Nvxx_/pub?start=false&loop=true&delayms=5000) (Google Slides) 
 
   # UX
-### **User Goals** 
-- As a user, I want to be able to play against my friends.
-- As a user, I want the information to be understandable.
-- As a user, I want my score to be counted to see who wins overall.
-- As a user, I want the game to run smoothly.
-- As a user, I want to be able to play again.
+### **User Goals**
+- As a ***user*** I can view the page so that I can get the required information
+- As a ***user*** I can register an account so that I can like the images/posts 
+- As a ***user*** I can login to the account so that I can view the information that is required to be logged in for
+- As a ***user*** I can logout from the website so that the information (Logged in information) isn't visible when you are logged out
+- As a ***user*** I can create a post so that other users can view what I post
+- As a ***user*** I can Create/Read/Update/Delete the posts I make.
+- As a ***user*** I can click on a post so that I can read the information
+- As a ***user*** I can view posts and select one and get the information I want
+- As a ***user*** I can like/unlike posts so that so I can interact with the posts/images
+- As a ***user*** I can see the numbers of likes so that I can see what other users liked most
+- As a ***user*** I can comment on posts to give my feedback.
+- As a ***user*** I can contact the page so that I can get updates
+
+
 
 ### **Owner Goals**
-- As the owner, I want to be able to add new features.
+- As a  ***Site Admin*** I can install libraries so that the required libraries are installed and ready to use
+- As a ***Site Admin*** I can deploy the website early so that the site can be tested early
+- As a ***Site Admin*** I can Create/Read/Update/Delete posts so that the posts/images can be managed
+- As a ***Site Admin*** I can view the contact information provided so that the user can be replied to
+
 
 ### **Returning User**
-- As a returning user, I want to try and beat my previous scores against friends.
+- As a ***returning user*** I can view/ my created post to see how its doing.
 
 # Features
 ## **Exisiting Features**
