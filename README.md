@@ -5,7 +5,7 @@ The game is hosted on heroku.
 
 The aim of the blog site is to get a review,ideas etc on your car.
 
-Check out [Car Reviews]()
+Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
 ### **Disclaimer if you would like to open any links in a new tab use `Ctrl` and click the link.**
 
@@ -144,7 +144,8 @@ Check out [Car Reviews]()
    | Category Admin Panel Issues | I was having issues with category not showing in the admin panel | I fixed this by adding category to my admin.py file |
    | Images Showing | I was having issues with the images showing up | I got help from slack and added `` enctype="multipart/form-data`` to my form |
    | Deployment | I was having issues with deployment caused by cloudinary | I added cloudinary cloud_name, api_key and api_secret to heroku config vard |
-   |  |  | |
+   | Most recent post | The most recent post wasn't appearing first | I solved this with ``ordering = ['-created_on']`` |
+   | Navbar | I was having issues with the navbar placement | I got help from [Bootsrap Navbar Docs](https://getbootstrap.com/docs/4.0/components/navbar/) |
 
    # Creation
    1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
