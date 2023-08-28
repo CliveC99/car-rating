@@ -1,9 +1,11 @@
 # Car Review Blog Site
 Here you can post your car and get reviews.
 
-The game is hosted on heroku.
+The blog is hosted on heroku.
 
 The aim of the blog site is to get a review,ideas etc on your car.
+
+As a user you can create a post and other users can favourite and comment on your post.
 
 Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
@@ -106,6 +108,10 @@ Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
    | HTML Validation (W3C) | Pass | Errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vQI1DCdV_sTnf4QII-oOZ8UV51OpuGG7_IeoWxJ6RYZdOJ8hlINfYzVNp2fb05ePwZccbWUGDOb9APc/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
    | CSS Validation  | Pass | Pass | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693162287/PP4%20Readme/css_rhhson.jpg) |
    | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
+   | Links | Links work. | Links open as they should. | Open each link |
+   | Form validation | Fields are required to submit | Fields were required to submit the form | Submit the form with empty fields and with fields filled. |
+   | Responsiveness | Should not break at any screen size | Didb't break at any size | Drag the screen down to 320px |
+   | Lighthouse | Scores are good | Performance, Accessibility, Best Practice, SEO > 89%  | Chrome Developer Tools Lighthouse |
 
    # Frameworks
   - [Django](https://www.djangoproject.com/)
