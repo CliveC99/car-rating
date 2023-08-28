@@ -204,7 +204,7 @@ pip3 install urllib3==1.26.15
 }`
 14. Save all files and in the terminal paste `python3 manage.py migrate`
 ### Static Files
- 1. Head to [Cloudinary](Cloudinary.com)
+ 1. Head to [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HBiqtoSkOp8dv2sdvprV-d3z6NkMdyK0guRRH98shquMJ7QiCtVbJQaAnvIEALw_wcB)
  2. Head to dashboard and copy your CLOUDINARY_URL
  3. In env.py add `os.environ["CLOUDINARY_URL"] = "cloudinary://your_link`
  4. Add cloudinary url to heroku confic vars.
