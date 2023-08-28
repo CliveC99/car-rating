@@ -101,7 +101,7 @@ Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
    | Testing        |    Expected   | Result       | Test |
    | -------------  |:-------------:| -----:| -----: |
-   | HTML Validation (W3C) | Pass | Errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vRhU0RHyYE-rQnc9Cna2TQW-rw12e_NPvrMDmPYpEMdQJLLMqwbAtvmh44Aj96I4yb24vrJ8p4Nvxx_/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
+   | HTML Validation (W3C) | Pass | Errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vQI1DCdV_sTnf4QII-oOZ8UV51OpuGG7_IeoWxJ6RYZdOJ8hlINfYzVNp2fb05ePwZccbWUGDOb9APc/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
    | CSS Validation  | Pass | Pass | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693162287/PP4%20Readme/css_rhhson.jpg) |
    | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
 
