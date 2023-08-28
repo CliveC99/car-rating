@@ -140,11 +140,11 @@ Check out [Car Reviews]()
     # Bugs and Fixes
   | Bugs/Errors        |   Explain   | Fix |
    | -------------  |:-------------:| -----: |
-   | User input  | I was having issues with user input if the wrong data was entered. | I got help from [Stack Overflow.](https://stackoverflow.com/questions/49496609/user-input-being-incorrectly-appended-to-python-list) |
-   | Index errors | I was having issues with index errors being one off. | I fixed this by adding `int(position) - 1` where needed. |
-   | Score counter | I was having issues with the score counter adding for a win. |  I solved this by adding `player_one += 1` I got help from [Stack Overflow](https://stackoverflow.com/questions/26514438/python-how-to-keep-score-in-a-tic-tac-toe-game)|
-   | Reset score counter | I was having issues with the score counter resetting. | I solved this by adding `player_one = 0 player_two = 0` |
-   | User input for play again/reset score | I was having issues that allowed the user to continue to the next step if the data was wrong. | I solved this by adding `valid = False` and then placing `input(f"\nYou entered '{y_n}', Enter 'y' for Yes - Enter 'n' for No: ")` |
+   | Password Redirect  | I was having issues with being directed to the password change site | I got help from [Stack Overflow](https://stackoverflow.com/questions/52445694/the-current-path-account-login-didnt-match-any-of-these) I solved this by using ``<int:uid>``  |
+   | Category Admin Panel Issues | I was having issues with category not showing in the admin panel | I fixed this by adding category to my admin.py file |
+   | Images Showing | I was having issues with the images showing up | I got help from slack and added `` enctype="multipart/form-data`` to my form |
+   | Deployment | I was having issues with deployment caused by cloudinary | I added cloudinary cloud_name, api_key and api_secret to heroku config vard |
+   |  |  | |
 
    # Creation
    1. Head over to [CI Template](https://github.com/Code-Institute-Org/gitpod-full-template)
@@ -269,6 +269,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
     - [Tutorial 3](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&ab_channel=Codemy.com)
     - [Tutorial 4](https://www.youtube.com/watch?v=I8TRkEcw9Mg&ab_channel=CodeWithStein)
     - [Tutorial 5](https://www.youtube.com/watch?v=3aVqWaLjqS4&ab_channel=CoreySchafer)
+  - I got help with urls.py path from [Stack Overflow](https://stackoverflow.com/questions/52445694/the-current-path-account-login-didnt-match-any-of-these)
+  - I got help with form succession page from [Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
   - This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn).
   - I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
 
