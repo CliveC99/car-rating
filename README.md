@@ -7,7 +7,9 @@ The aim of the blog site is to get a review,ideas etc on your car.
 
 As a user you can create a post and other users can favourite and comment on your post.
 
-Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
+This is my fourth portfolio project for Code Institute. I will demonstrate my learnings in Python, HTML, Django, Bootstrap etc.
+
+Live deoployed link on heroku: [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
 ![Am I Responsive?](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693187389/PP4%20Readme/am_i_reposive_zm5eez.jpg)
 
@@ -30,10 +32,13 @@ Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
 # Wireframes
 
+I used Google Slides to show my wireframes so it would keep the README clean and tidy.
+
 -[Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vRhU0RHyYE-rQnc9Cna2TQW-rw12e_NPvrMDmPYpEMdQJLLMqwbAtvmh44Aj96I4yb24vrJ8p4Nvxx_/pub?start=false&loop=true&delayms=5000) (Google Slides) 
 
   # UX
 ### **User Goals**
+I used a Kanban board to outline my progress [view here.](https://github.com/users/CliveC99/projects/2)
 - As a ***user*** I can view the page so that I can get the required information
 - As a ***user*** I can register an account so that I can like the images/posts 
 - As a ***user*** I can login to the account so that I can view the information that is required to be logged in for
@@ -105,7 +110,7 @@ Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
    | Testing        |    Expected   | Result       | Test |
    | -------------  |:-------------:| -----:| -----: |
-   | HTML Validation (W3C) | Pass | Errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vQI1DCdV_sTnf4QII-oOZ8UV51OpuGG7_IeoWxJ6RYZdOJ8hlINfYzVNp2fb05ePwZccbWUGDOb9APc/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
+   | HTML Validation (W3C) | Pass | There is some errors caused by django forms | -[Validation](https://docs.google.com/presentation/d/e/2PACX-1vQI1DCdV_sTnf4QII-oOZ8UV51OpuGG7_IeoWxJ6RYZdOJ8hlINfYzVNp2fb05ePwZccbWUGDOb9APc/pub?start=false&loop=true&delayms=5000) (Google Slides)  |
    | CSS Validation  | Pass | Pass | ![Contact](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693162287/PP4%20Readme/css_rhhson.jpg) |
    | Browsers | Works as normal. | No issues. | Use Chrome, Safari, Edge and Firefox |
    | Links | Links work. | Links open as they should. | Open each link |
@@ -280,6 +285,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`
     - [Tutorial 5](https://www.youtube.com/watch?v=3aVqWaLjqS4&ab_channel=CoreySchafer)
   - I got help with urls.py path from [Stack Overflow](https://stackoverflow.com/questions/52445694/the-current-path-account-login-didnt-match-any-of-these)
   - I got help with form succession page from [Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
+  - I got help from [Pillow](https://pypi.org/project/Pillow/), [Cloudinary Python SDK](https://cloudinary.com/documentation/django_integration), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) etc.
+  - I used [Am I Responsive?](https://ui.dev/amiresponsive) to check was the blog responive.
   - This project would not be possible without the help of my mentor (Rory_Patrick), my friends, and my facilitator (Chris Quinn).
   - I would also like to thank the private "Novemeber 2022-UCD" group on slack for the all the support.
 
