@@ -7,6 +7,8 @@ The aim of the blog site is to get a review,ideas etc on your car.
 
 Check out [Car Reviews](https://car-review-21ed92bc74a0.herokuapp.com/)
 
+![Am I Responsive?](https://res.cloudinary.com/dp9lxtk3y/image/upload/v1693187389/PP4%20Readme/am_i_reposive_zm5eez.jpg)
+
 ### **Disclaimer if you would like to open any links in a new tab use `Ctrl` and click the link.**
 
 # Table of Contents
